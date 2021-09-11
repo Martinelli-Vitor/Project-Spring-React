@@ -1,8 +1,24 @@
+import Footer from "components/Footer";
+import NavBar from "components/NavBar";
+import { Link } from "react-router-dom";
+
 function Home() {
     return (
-        <div>
-          <h1>Pagina Home</h1> 
+        <>
+        <NavBar />
+        <div className="container">
+            <div className="jumbotron">
+                <h1 className="display-4">Sales</h1>
+                <p className="lead">Analyze your sales performance from different perspectives</p>
+                 <hr/>
+                 <p>This application consists of displaying a dashboard from data provided by a backend built with Spring Boot.</p>
+             </div>
+             <Link className ="btn btn-primary btn-lg" to="/dashboard">
+                 Dashboard access
+             </Link>
         </div>
+        <Footer />
+        </>
     );
   }
   
